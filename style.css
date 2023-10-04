@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'DynaPuff', cursive;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+:root{
+    background-color: rgb(255, 255, 255);
+    --txtheader:#6d6875;
+    --background:#ffffff;
+    --back:#dbc580;
+    --hoverlink:#c3644c;
+}
+/* Start Header */
+header{
+    background-color: var(--background);
+    font-size: 20px;
+    z-index: 999;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+}
+header .container ul {
+    list-style: none;
+    display: flex;
+    margin: 2px 0 0 0;
+}
+header a {
+    text-decoration: none;
+    padding: 0 25px 0 15px;
+    color: var(--txtheader);
+    transition: 0.5s;
+}
+header .container .logo a{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+header .container .logo a img{
+    margin-top: -15px;
+}
+header .container ul  :hover{
+    transform: scale(1.2);
+    color: var(--hoverlink);
+}
+header .container .logo a:hover{
+    color: var(--txtheader);
+}
+.logo a::after{
+    content: "lio";
+    color:var(--hoverlink) ;
+}
+header.sticky{
+    background-color: var(--background);
+    border-bottom:solid 1px var(--back) ;
+    transition: all 0.4s;
+}
+/* End Header */
+
+/* Start Section1 */
+.section1{
+    height: 100vh;
+    background-color: #c3644c;
+}
+.custom-shape-divider-bottom-1663270761 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1663270761 svg {
+    position: relative;
+    display: block;
+    width: calc(177% + 1.3px);
+    height: 250px;
+}
+
+.custom-shape-divider-bottom-1663270761 .shape-fill {
+    fill: #FFFFFF;
+}
+.section1 .photo{
+    float: right;
+    padding: 0px 60px 0 0;
+    animation: move 3s infinite;
+}
+@keyframes move {
+    0% {transform: translate(0,0);}
+    50% {transform: translate(10px,0);}
+    100% {transform: translate(0, 0);}
+}
+.section1 .container .main{
+    padding-top: 240px;
+}
+.section1 .container .main .contact h1{
+    font-size: 60px;
+    font-weight: 800;
+    color: var(--back);
+}
+.section1 .container .main .socialmedia img{
+    margin: 5px 10px 0 0;
+    transition: all 0.4s;
+}
+.section1 .container .main .socialmedia a :hover{
+    transform: scale(1.2);
+}
+/* End Section1 */
+
+
+/* Start Section2 */
+.section2 {
+    height: 500px;
+    /* background-color: aquamarine; */
+}
+.section2 .container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+.section2 .container .txt{
+    color: var(--txtheader);
+    text-align: center;
+    padding: 70px 0 30px 0;
+    font-size: 20px;
+}
+.section2 .container .txt h1{
+    color: var(--hoverlink);
+}
+.section2 .container .txt h3 {
+    color: var(--back);
+}
+.section2 .container .photo{
+    padding-top: 30px ;
+}
+/* End Section2 */
+
+
+/* Start SEction3 */
+.section3{
+    background-color:var(--hoverlink);
+    height: 600px;
+}
+.section3 .container .txt h2{
+    text-align: center;
+    padding: 80px 0 30px 0;
+    font-size: 50px;
+    color: var(--back);
+}
+.section3 .container .prag {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.section3 .container .prag .contact{
+    width: 300px;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.893);
+    padding: 15px;
+    border-radius: 20px;
+    border-bottom: solid 6px var(--back);
+    transition: all 0.6s;
+    color: var(--txtheader);
+    line-height: 30px;
+}
+.section3 .container .prag .contact h3{
+    padding-top: 10px;
+}
+.section3 .container .prag .contact:hover{
+    transform: scale(1.1,1.1);
+    width: 305px;
+    border: none;
+    border-top: solid 4px var(--back);
+    transition: all 0.6s;
+}
+.section3 .container .prag .contact :hover h3{
+    color: var(--hoverlink);
+}
+.section3 .container .prag .contact .icon{
+    font-weight: 800px;
+}
+/* End Section3 */
+
+/* Start SEction4 */
+.section4{
+    height: 800px;
+}
+.section4 .container .txt h3{
+    text-align: center;
+    padding: 90px 0 30px 0;
+    font-size: 40px;
+    color: var(--hoverlink);
+}
+.section4 .container form{
+    padding: 20px 300px;
+    margin-top: 30px;
+    color: var(--txtheader);
+}
+.section4 .container form input,
+.section4 .container form textarea{
+    width: 700px;
+    padding: 4px;
+}
+.section4 .container form label{
+    padding: 7px 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+::placeholder{
+    color: #9f9ba5;
+}
+.section4 .container form textarea:focus{
+    border: solid 2px var(--hoverlink);
+    outline: none;
+}
+.section4 .container form input:focus {
+    border: solid 2px var(--hoverlink);
+    outline: none;
+}
+.section4 .container form button{
+    border: none;
+    padding: 8px 15px;
+    background-color: var(--hoverlink);
+    border-radius: 6px;
+    color: var(--back);
+}
+/* End Section4 */
+
+
+/* Start footer */
+footer{
+    height: 255px;
+    background-color: var(--hoverlink);
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 100px;
+}
+footer .container .icon a{
+    text-decoration: none;
+    color: var(--txtheader);
+    font-size: 30px;
+    text-transform: uppercase;
+}
+footer .container .icon a img {
+    margin-top: -15px;
+}
+footer .container .icon a:hover {
+    color: var(--txtheader);
+}
+footer .container .icon a::after {
+    content: "lio";
+    color: var(--back);
+}
+footer .container .contacts ul {
+    list-style: none;
+    margin: -30px 0 0 -100px;
+    font-size: 25px;
+    text-align: center;
+}
+footer .container .contacts ul li a{
+    text-decoration: none;
+    color: var(--back);
+}
+footer .container .contacts ul :hover {
+    transform: scale(1.2);
+    color: var(--txtheader);
+}
+footer .container .social a{
+    display: block;
+    margin-bottom: 10px;
+
+}
+footer .container .social{
+    margin-top: -30px;
+    margin: -30px 120px 0 0;
+}
+footer .container .social img {
+    transition: all 0.4s;
+}
+
+footer .container .social a :hover {
+    transform: scale(1.2);
+}
+footer .container .top{
+    display: block;
+}
+/* End footer */
+
+.end{
+    background-color: var(--hoverlink);
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+.end a{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
